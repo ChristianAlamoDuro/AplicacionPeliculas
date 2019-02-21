@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-menu bg-menu col-12 shadow d-flex sticky-top">
+  <a class="navbar-brand" [routerLink]="[ '/home']"><img src="../../../assets/img/popcorn.png" id="icono"></a>
+  <div class="form-inline form-aparece-movil col-5">
+    <input class="form-control  rounded-pill" type="search" placeholder="Buscar" aria-label="Search" (keyup.enter)=buscarPelicula() [(ngModel)]="peliculaBuscar">
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-sm-1">
+      <li class="nav-item mr-1" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="[ '/home']" >Home</a>
+      </li>
+      <li class="nav-item  mr-1" routerLinkActive="active">
+        <a class="nav-link"  [routerLink]="[ '/peliculas']" >Películas</a>
+      </li>
+    </ul>
+    <div class="form-inline mr-auto form-desaparece-movil">
+      <input class="form-control mr-2 rounded-pill" id="busqueda" type="search" placeholder="Buscar" aria-label="Search" (keyup.enter)=buscarPelicula() [(ngModel)]="peliculaBuscar">
+      <button (click)=buscarPelicula() class="bg-busqueda btn btn-outline-success my-2 my-sm-0 rounded-pill" type="button"><i class="fa fa-search"></i></button>
+    </div>
+    <ul class="navbar-nav ml-auto color-logeo">
+      <li class="nav-item mr-1">
+        <a class="nav-link" href="#"><i class="fa fa-user"></i> Login</a>
+      </li>
+      <li class="nav-item mr-1">
+        <a class="nav-link" href="#"><i class="fa fa-unlock-alt"></i> Registro</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,120 @@
+/************* Letras de la web *************/
+/*
+		Estilo comic para las peliculas
+	
+    @font-face {
+        src: url("../Fonts/Caveat-Regular.ttf");
+        font-family: comic;
+    }
+    
+    
+    /************* Fin letras web *************/
+    
+    /************* Configuraciones generales para atribitos de bootstrap  *************/
+    */ .container-fluid {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    /*
+            Quitar efecto focus sobre la propiedad btn definida por bootstrap
+        */
+    .btn.focus,
+    .btn:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+    }
+    
+    /*
+            Todos los elementos card tengan el mismo ancho
+        */
+    .card {
+        height: 100%;
+    }
+    
+    /************* FIN Configuraciones generales para atribitos de bootstrap  *************/
+    
+    
+    /************* Configuraciones generales de la web *************/
+    
+    /************* MENU DE NAVEGACION *************/
+    #icono {
+        width: 75px;
+    }
+    
+    .bg-menu {
+        background: linear-gradient(135deg, rgba(101, 52, 247, 1) 0%, rgba(218, 24, 240, 1) 100%);
+    }
+    
+    .navbar-menu a {
+        color: #d09ced;
+    }
+    
+    .navbar-menu a:hover {
+        color: #ffffff;
+    }
+    
+    ul li.active a {
+        color: #ffffff;
+    }
+    
+    .color-logeo a {
+        color: #4d1ba0;
+    }
+    
+    .bg-busqueda:hover {
+        background-color: #e2fdbd;
+        color: #000000;
+        border: solid 2px #c9fc85;
+    }
+    
+    .bg-busqueda {
+        color: #ffffff;
+        border: solid 2px #ffffff;
+    }
+    
+    .form-desaparece-movil {
+        display: none;
+    }
+    
+    .form-aparece-movil {
+        display: block;
+    }
+    
+    @media (min-width: 991px) {
+        .form-desaparece-movil {
+            display: block;
+        }
+    
+        .form-aparece-movil {
+            display: none;
+        }
+    }
+    
+    /*Menu desplegable de la barra de navegacion principal*/
+    li.active div a.dropdown-item,
+    li.nav-item div.dropdown-menu a.dropdown-item {
+        color: black;
+    }
+    
+    li.active div a.dropdown-item:hover,
+    li.nav-item div.dropdown-menu a.dropdown-item:hover {
+        background: linear-gradient(135deg, rgba(101, 52, 247, 1) 0%, rgba(218, 24, 240, 1) 100%);
+        color: #ffffff;
+    
+    }
+    
+    /*Fin de Menu desplegable de la barra de navegacion principal*/
+    
+    /************* FIN MENU DE NAVEGACION *************/
+    
+    /************* CUERPO WEB *************/
+    hr {
+        background-color: rgba(101, 52, 247, 1);
+    }
+    
+    /************* FIN CUERPO WEB *************/
+    
+    
+    /************* Fin configuraciones generales de la web *************/

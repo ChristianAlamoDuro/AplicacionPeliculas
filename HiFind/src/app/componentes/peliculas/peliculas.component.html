@@ -1,0 +1,27 @@
+<main class="container container-peliculas">
+  <h2 class="text-center display-4 mt-5">Superhéroes</h2>
+  <hr>
+  <!--Superheroes-->
+  <section class="row ml-sm-auto mr-sm-auto d-flex justify-content-center">
+    <!--Pelíclula 1 -->
+    <article *ngFor="let pelicula of peliculasInicio" class="col-md-6 col-lg-4 col-xl-4 mt-5 px-auto">
+      <div class="card shadow-lg">
+        <img class="img-fluid" src="{{pelicula.Poster}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{pelicula.Title}}</h5>
+          <hr>
+          <h6 class="card-subtitle mb-2 text-muted"> <small>{{pelicula.Year}}</small></h6>
+          <p class="card-text">{{pelicula.Plot}}
+          </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-end p-4">
+          <!-- Boton Modal--> 
+            <button type="button" class="btn btn-primary" (click)=masInfo(pelicula.Title)>
+              Ver más
+            </button>
+          <!-- Modal -->
+        </div>
+      </div>
+    </article>
+  </section>
+</main>

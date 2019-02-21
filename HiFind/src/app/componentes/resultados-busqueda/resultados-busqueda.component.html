@@ -1,0 +1,24 @@
+<!--{{resultadoPeliculas[0].Search[0].Title}}-->
+<div class="container" *ngIf="resultadoPeliculas">
+    <h2 class="text-center display-4 mt-5">Has buscado : {{tituloBuscar}}</h2>
+  <div class="row" *ngFor="let pelicula of resultadoPeliculas.Search">
+    <div class="col-12 mt-5" *ngIf="pelicula.Type == 'movie' && pelicula.Poster != 'N/A'">
+      <div class="row">
+        <div class="col-2">
+          <img src="{{pelicula.Poster}}" alt="{{pelicula.Title}}" class="figure-img img-fluid rounded">
+        </div>
+        <div class="col-8">
+          <p> <span class="font-weight-bold">Titulo:</span> {{pelicula.Title}} <br>
+            <span class="font-weight-bold">Año:</span> {{pelicula.Year}} <br>
+          </p>
+              <button type="button" class="btn btn-primary align-item-end" (click)=masInfo(pelicula.Title)>
+                  Ver más
+                </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 text-center" *ngIf="resultadoPeliculas.Response == 'False'">
+      <h5>pelicula no encontrada</h5>
+    </div>
+</div>
