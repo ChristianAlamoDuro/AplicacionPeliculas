@@ -1,0 +1,50 @@
+
+/*Estilos para el titulo de peliculas destacadas*/
+/*
+@font-face {
+    src: url("../Fonts/Marmelad-Regular.ttf");
+    font-family: nav-lateral;
+}
+*/
+.tit-peliculas {
+    color: #4d1ba0;
+    font-family: comic;
+}
+
+/*Estilos de la tarjeta de información adicional*/
+.info-adicional {
+    width: 80%;
+}
+
+/*Estilos del titulos sinopsis de la informacion que se muestra al pinchar en una imagen*/
+.subtitulo {
+    color: #bc70e4;
+}
+
+/*Estilos para que al pasar el raton por encima de la imagen se vea el cursor de la mano*/
+img.card-img-top:hover {
+    cursor: pointer;
+}
+/*INICIO ESTILOS BARRA LATERAL*/
+/*Estilos para barra hr del la barra lateral*/
+nav hr {
+    width: 100%;
+    background-color: #7d827f;
+}
+/*estilos enlaces barra lateral*/
+.nav-lateral a {
+    color: #4d1ba0;
+    font-size: 1rem;
+    font-family: nav-lateral;
+}
+
+.nav-lateral h4 {
+    font-size: 1.7rem;
+}
+
+.nav-lateral a:hover {
+    border-left: solid 1px #4d1ba0;
+    border-right: solid 1px #4d1ba0;
+    background-color: #eaeaea;
+}
+/*FIN ESTILOS BARRA LATERAL*/

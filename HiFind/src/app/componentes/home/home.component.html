@@ -1,0 +1,53 @@
+<app-publicidad></app-publicidad>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 shadow-lg form-desaparece-movil pl-5">
+      <nav class="nav flex-column nav-lateral">
+        <h4 class="text-muted">Películas</h4>
+        <hr>
+        <h4 class="text-muted">Categorías</h4>
+        <a class="nav-link active" href="#">Terror</a>
+        <a class="nav-link" href="#">Ciencia Ficción</a>
+        <a class="nav-link" href="#">Comedia</a>
+        <a class="nav-link" href="#">Drama</a>
+        <a class="nav-link" href="#">Acción</a>
+        <a class="nav-link" href="#">Animación</a>
+        <a class="nav-link" href="#">Superhéores</a>
+        <a class="nav-link" href="#">Cartelera</a>
+        <h4 class="text-muted mt-3">Videojuegos</h4>
+        <hr>
+        <h4 class="text-muted">Categorías</h4>
+        <a class="nav-link active" href="#">Mas Jugados</a>
+        <a class="nav-link" href="#">Top Twitch</a>
+        <a class="nav-link" href="#">Juegos del año</a>
+        <a class="nav-link" href="#">Mejores 2019</a>
+        <a class="nav-link" href="#">Estrategia</a>
+        <a class="nav-link" href="#">Rol</a>
+        <a class="nav-link" href="#">Acción</a>
+        <a class="nav-link" href="#">Aventuras</a>
+        <a class="nav-link" href="#">Conducción</a>
+        <a class="nav-link" href="#">E-Sport</a>
+      </nav>
+    </div>
+  <div class="col-lg-10 col-md-12">
+    <div class='display-4 container text-center tit-peliculas mt-5'>
+      Películas destacadas
+    </div>
+    <div class="container mt-3 hr-morada">
+      <hr>
+    </div>
+    <div class="container-fluid my-3">
+      <div class="row justify-content-center">
+        <div *ngFor="let pelicula of peliculasDestacadas" class="col-xl-2 col-md-6 mx-auto my-3">
+          <div class="card shadow-lg">
+            <img src="{{pelicula.Poster}}" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{pelicula.Title}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

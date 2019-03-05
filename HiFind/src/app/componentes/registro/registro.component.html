@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-12 col-md-6 mr-auto ml-auto mt-5">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="text-center">
+            Registrate!
+          </h1>
+          <form #formRegister >
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" class="form-control" required [(ngModel)]="email">
+            </div>
+            <!-- Username -->
+            <div class="form-group">
+              <label for="email">Nombre de usuario:</label>
+              <input type="text" name="username" id="username" class="form-control" required [(ngModel)]="username">
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+              <label for="email">Contraseña:</label>
+              <input type="password" name="password" id="password" class="form-control" required [(ngModel)]="password">
+            </div>
+            <input type="submit" value="Enter" id="enter" name="enter" class="btn btn-block btn-lg btn-primary"> <br>
+            ¿Ya tienes una cuenta? <a [routerLink]="[ '/loginPage']">Accede a tu cuenta!</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,188 @@
+/************** INICIO ANIMACIÓN PUBLICIDAD *************/
+/*Animación del fondo de la publicidad*/
+@keyframes animacion-fondo-publi {
+	100% {
+		bottom: -400%;
+	}
+}
+
+/*Animación primer titulo*/
+@keyframes animacion-titulo {
+	100% {
+		transform: scale(1, 0);
+		bottom: -30%;
+	}
+}
+
+/*Animacion Logo primero*/
+@keyframes animacion-logo {
+	0% {
+		left: 0;
+		bottom: 0;
+	}
+
+	10% {
+		left: 5%;
+		bottom: 30%;
+	}
+
+	20% {
+		left: 10%;
+		bottom: 0;
+	}
+
+	30% {
+		left: 15%;
+		bottom: 30%;
+	}
+
+	40% {
+		left: 20%;
+		bottom: 0;
+	}
+
+	50% {
+		left: 25%;
+		bottom: 30%;
+	}
+
+	60% {
+		left: 30%;
+		bottom: 0%;
+	}
+
+	70% {
+		left: 35%;
+		bottom: 30%;
+	}
+
+	80% {
+		left: 37%;
+		bottom: 0%;
+	}
+
+	85% {
+		left: 45%;
+		bottom: 100%;
+	}
+
+	86% {
+		left: 45%;
+		bottom: 0;
+		transform: rotate(0deg);
+	}
+
+
+	92% {
+		transform: rotate(10deg);
+		left: 45%;
+		bottom: 0;
+		transform: rotate(0deg);
+	}
+
+	94% {
+		transform: rotate(-10deg);
+	}
+
+	95% {
+		transform: rotate(10deg);
+	}
+
+	96% {
+		transform: rotate(-10deg);
+	}
+
+	97% {
+		transform: rotate(10deg);
+	}
+
+	98% {
+		transform: rotate(-10deg);
+	}
+
+	99% {
+		transform: rotate(10deg);
+		opacity: 1;
+	}
+
+	100% {
+		transform: rotate(-10deg);
+		opacity: 0;
+		left: 45%;
+		bottom: 0;
+	}
+
+}
+
+/*Animación logo segundo con mano zombie*/
+@keyframes animacion-logo-zombie {
+	100% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+}
+
+/*Animación titulo final*/
+@keyframes animacion-titulo-final {
+	1% {
+		opacity: 1;
+	}
+
+	2% {
+		opacity: 0;
+	}
+
+	3% {
+		opacity: 0;
+	}
+
+	4% {
+		opacity: 0;
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	6% {
+		opacity: 1;
+	}
+
+	7% {
+		opacity: 1;
+	}
+
+	8% {
+		opacity: 0;
+	}
+
+	10% {
+		left: 0;
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 1;
+		left: -60%
+	}
+
+	26% {
+		opacity: 0;
+	}
+
+	39% {
+		opacity: 0;
+	}
+
+	40% {
+		left: 100%;
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+/************** Fin ANIMACIÓN PUBLICIDAD *************/

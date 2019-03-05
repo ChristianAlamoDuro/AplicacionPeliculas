@@ -1,0 +1,270 @@
+
+/************* Letras de la web *************/
+/*
+		Estilo comic para las peliculas
+	*/
+
+
+/************* Fin letras web *************/
+
+/************* Configuraciones generales para atribitos de bootstrap  *************/
+.container-fluid {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/*
+		Quitar efecto focus sobre la propiedad btn definida por bootstrap
+	*/
+.btn.focus,
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+}
+
+/*
+		Todos los elementos card tengan el mismo ancho
+	*/
+.card {
+	height: 100%;
+}
+
+/************* FIN Configuraciones generales para atribitos de bootstrap  *************/
+
+
+/************* Configuraciones generales de la web *************/
+
+/************* MENU DE NAVEGACION *************/
+#icono {
+	width: 50px;
+}
+
+.bg-menu {
+	background: linear-gradient(135deg, rgba(101, 52, 247, 1) 0%, rgba(218, 24, 240, 1) 100%);
+}
+
+.navbar-menu a {
+	color: #d09ced;
+}
+
+.navbar-menu a:hover {
+	color: #ffffff;
+}
+
+ul li.active a {
+	color: #ffffff;
+}
+
+.color-logeo a {
+	color: #4d1ba0;
+}
+
+.bg-busqueda:hover {
+	background-color: #e2fdbd;
+	color: #000000;
+	border: solid 2px #c9fc85;
+}
+
+.bg-busqueda {
+	color: #ffffff;
+	border: solid 2px #ffffff;
+}
+
+.form-desaparece-movil {
+	display: none;
+}
+
+.form-aparece-movil {
+	display: block;
+}
+
+@media (min-width: 991px) {
+	.form-desaparece-movil {
+		display: block;
+	}
+
+	.form-aparece-movil {
+		display: none;
+	}
+}
+
+/*Menu desplegable de la barra de navegacion principal*/
+li.active div a.dropdown-item,
+li.nav-item div.dropdown-menu a.dropdown-item {
+	color: black;
+}
+
+li.active div a.dropdown-item:hover,
+li.nav-item div.dropdown-menu a.dropdown-item:hover {
+	background: linear-gradient(135deg, rgba(101, 52, 247, 1) 0%, rgba(218, 24, 240, 1) 100%);
+	color: #ffffff;
+
+}
+
+/*Fin de Menu desplegable de la barra de navegacion principal*/
+
+/************* FIN MENU DE NAVEGACION *************/
+
+/************* CUERPO WEB *************/
+/*
+	Todos los HR de la web tendrán el mismo color, sí se quiere un nuevo color se cambiará en los estilos de la página concreta 
+*/
+footer,
+footer a {
+	font-family: letra-footer;
+}
+
+hr {
+	background-color: rgba(101, 52, 247, 1);
+}
+
+/************** INICIO ESTILOS CONTENEDOR ANIMACION PUBLICIDAD *************/
+
+.contenedor-animacion {
+	position: relative;
+	overflow: hidden;
+}
+
+/*Estilos logo animacion*/
+.logo-ani {
+	position: absolute;
+	width: 10%;
+	animation: animacion-logo 8s 1 both;
+	z-index: 1;
+}
+
+.foto-in {
+	position: relative;
+	visibility: hidden;
+	width: 10%;
+}
+
+/*Estilos titulo animación*/
+.tit-ani {
+	position: absolute;
+	left: 45%;
+	bottom: -15%;
+	font-family: 'Lobster', cursive;
+	font-size: 2vh;
+	animation: animacion-titulo 0.4s 1 6.86s both;
+
+}
+
+/*Estilos fondo animación*/
+.fondo-ani {
+	position: absolute;
+	animation: animacion-fondo-publi 2s 1 8.5s both;
+	bottom: 100%;
+	width: 100%;
+}
+
+.logo-zombie {
+	position: absolute;
+	width: 10%;
+	left: 45%;
+	bottom: 0;
+	animation: animacion-logo-zombie 1s 8s both;
+	opacity: 0;
+	transform: scale(0, 0);
+}
+
+/*Estilos titulo animacion con estilo neon*/
+.neon {
+	letter-spacing: -2px;
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 25px #ff00de;
+	-webkit-text-fill-color: #F4ECFF;
+	-webkit-text-stroke-color: #C546F7;
+	-webkit-text-stroke-width: 0.2px;
+	position: absolute;
+	bottom: -35%;
+	font-size: 8vw;
+	animation: animacion-titulo-final 10s 10s infinite;
+	left: 0;
+	opacity: 0;
+	font-family: 'Lobster', cursive;
+}
+
+/************** FIN ESTILOS CONTENEDOR ANIMACION PUBLICIDAD *************/
+
+/************* FIN CUERPO WEB *************/
+
+/************* FOOTER *************/
+.bg-footer {
+	background-color: #2d3246;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+footer h6 {
+	color: #ffffff;
+}
+
+/*
+	Ajuste para todos los hr que se encuentren dentro del footer
+*/
+footer hr {
+	width: 50%;
+	margin: 0;
+}
+
+footer a:hover,
+span.enlace:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer a,
+span.enlace {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+	Cuando el usuario pase el ratón por el span.enalce le saldrá una mano para que vea que puede hacer click
+*/
+span.enlace {
+	cursor: pointer;
+}
+
+/************** INICIO MEDIA QUERYS *************/
+/*Media querys para distintos tamaños para que el titulo quede encuadrado siempre*/
+@media (min-width:765px) {
+	.tit-ani {
+		bottom: 0%;
+		font-size: 3vh;
+	}
+
+	.neon {
+		bottom: -15%;
+		font-size: 6vw;
+	}
+}
+
+@media (min-width:1200px) {
+	.tit-ani {
+		bottom: 15%;
+		font-size: 4vh;
+	}
+
+	.neon {
+		bottom: -10%;
+	}
+}
+
+@media (min-width:1400px) {
+	.neon {
+		bottom: -20%;
+	}
+}
+
+@media (min-width:1660px) {
+	.neon {
+		font-size: 4vw;
+		bottom: -20%;
+	}
+}
+
+/************** FIN MEDIA QUERYS *************/
+
+
+/************* Fin configuraciones generales de la web *************/
