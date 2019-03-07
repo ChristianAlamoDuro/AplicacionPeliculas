@@ -10,17 +10,17 @@ import { RegistroComponent } from "./componentes/registro/registro.component";
 
 
 
-  import { from } from 'rxjs';
+import { from } from 'rxjs';
 
 const routes: Routes = [
-  {path: "",component:HomeComponent},
-  {path: "home",component:HomeComponent},
-  {path: "peliculas",component:PeliculasComponent},
-  {path: "masInfo/:titulo",component:MasInfoComponent},
-  {path: "busqueda/:titulo",component:ResultadosBusquedaComponent},
-  {path:"loginPage", component:LoginComponent},
-  {path:"registroPage", component:RegistroComponent},
-  {path: "**",component:HomeComponent}
+  { path: "", pathMatch: 'full', redirectTo: 'home' },
+  { path: "home", component: HomeComponent },
+  { path: "peliculas", component: PeliculasComponent },
+  { path: "masInfo/:titulo", component: MasInfoComponent },
+  { path: "busqueda/:titulo", component: ResultadosBusquedaComponent },
+  { path: "loginPage", component: LoginComponent },
+  { path: "registroPage", component: RegistroComponent },
+  { path: "**", component: HomeComponent }
 ];
 
 @NgModule({

@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ApiPeliculasService {
 
-  //URL y KEY de la API publica de las películas
+  // URL y KEY de la API publica de las películas
   public url: string;
 
   constructor(
@@ -27,12 +27,12 @@ export class ApiPeliculasService {
   }
 
   /*
-    Nos retornará los datos de las peliculas que coincidan con el titulo que 
+    Nos retornará los datos de las peliculas que coincidan con el titulo que
     el usuario busque
     @params
       tituloPelicula --> Titulo de la pelicula que vamos a buscar.
     @return
-        Devuleve un objeto JSON con la informacion de las películas que coincidan 
+        Devuleve un objeto JSON con la informacion de las películas que coincidan
         con el título
   */
   getBuscarPeliculaApiPublica(tituloPelicula): Observable<any> {
@@ -43,12 +43,12 @@ export class ApiPeliculasService {
     @params:
       titulos --> Array con los titulos de las peliculas que quiere obtener
 
-    @return 
+    @return
       Devuelve un array con los objetos de las peliculas que hemos pedido que cargue
   */
   obtenerPeliculas(titulos: Array<string>) {
-    var arrayPeliculas = [''];
-    var cont = 0;
+    const arrayPeliculas = [''];
+    let cont = 0;
     for (const titulo of titulos) {
       this.getPeliculaApiPublica(titulo).subscribe(
         result => {
@@ -58,7 +58,7 @@ export class ApiPeliculasService {
         error => {
           console.log(<any>error);
         }
-      )
+      );
     }
     return arrayPeliculas;
   }

@@ -11,9 +11,9 @@ export class ServiciosGeneralService {
     Funcion que cerrará el menu cuando se cargue una pagina
   */
   cerrarMenu(elemento) {
-    let clases = document.getElementById(elemento).className;
-    if (clases.includes("show")) {
-      document.getElementById(elemento).classList.remove("show");
+    const clases = document.getElementById(elemento).className;
+    if (clases.includes('show')) {
+      document.getElementById(elemento).classList.remove('show');
     }
   }
 }
